@@ -6,7 +6,7 @@ import urllib.parse
 # 🔑 Replace with your actual SurveyMonkey API credentials
 CLIENT_ID = "uKcTPUvLQ92OG_niuXgfkQ"
 CLIENT_SECRET = "44702891992229546666261285313930943507"
-REDIRECT_URI = "http://localhost:8501"
+REDIRECT_URI = "https://atgunis1.streamlit.app/"  # ✅ Updated for Streamlit Deployment
 
 # 🔗 Generate OAuth URL with required scopes
 SURVEYMONKEY_AUTH_URL = f"https://api.surveymonkey.com/oauth/authorize?client_id={CLIENT_ID}&redirect_uri={REDIRECT_URI}&response_type=code&scope=surveys_read+responses_read"
@@ -142,4 +142,3 @@ if st.button("📥 Download Selected Files"):
 # 📌 Footer Branding
 st.markdown("---")
 st.markdown("🔹 **Developed by ATG** 🔹", unsafe_allow_html=True)
-
